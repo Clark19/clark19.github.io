@@ -1,22 +1,229 @@
 <!doctype html>
-<html lang="en">
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio | Developer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900">
+    <header
+      class="fixed w-full bg-white/80 backdrop-blur-md z-50 border-b border-slate-200"
+    >
+      <div
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div class="text-xl font-bold tracking-tight">DEV.LOG</div>
+        <nav
+          class="hidden md:flex space-x-8 text-sm font-semibold text-slate-600"
+        >
+          <a href="#home" class="hover:text-blue-600 transition">Home</a>
+          <a href="#about" class="hover:text-blue-600 transition">About</a>
+          <a href="#skills" class="hover:text-blue-600 transition">Skills</a>
+          <a href="#projects" class="hover:text-blue-600 transition"
+            >Projects</a
+          >
+          <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+        </nav>
+      </div>
+    </header>
 
-<head>
-  <meta charset="utf-8">
-  <title>Hacker News Client</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Hacker News Client">
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
+    <section id="home" class="min-h-screen flex items-center pt-20 bg-white">
+      <div
+        class="container mx-auto px-6 flex flex-col md:flex-row items-center"
+      >
+        <div class="md:w-2/3">
+          <span
+            class="inline-block px-3 py-1 text-xs font-bold tracking-wider text-blue-600 bg-blue-50 rounded-full mb-4 uppercase"
+            >Back to the Tech</span
+          >
+          <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+            경험에 <span class="text-blue-600">새로운 기술</span>을 더하는
+            <br />개발자입니다.
+          </h1>
+          <p class="text-lg text-slate-600 mb-10 max-w-xl leading-relaxed">
+            13년 전 안드로이드 앱 개발을 시작으로, 현재는 Java, Spring, React 등
+            최신 스택을 통해 더 넓은 세상을 설계하고 있습니다. AI와 함께하는
+            '바이브 코딩'으로 효율적인 개발 문화를 지향합니다.
+          </p>
+          <div class="flex space-x-4">
+            <a
+              href="#projects"
+              class="bg-slate-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-slate-800 transition"
+              >프로젝트 보기</a
+            >
+            <a
+              href="#contact"
+              class="border border-slate-300 px-8 py-3 rounded-lg font-medium hover:bg-slate-50 transition"
+              >문의하기</a
+            >
+          </div>
+        </div>
+        <div class="md:w-1/3 mt-12 md:mt-0 flex justify-center">
+          <div
+            class="w-64 h-64 bg-slate-200 rounded-2xl rotate-3 flex items-center justify-center border-4 border-white shadow-2xl overflow-hidden"
+          >
+            <span class="text-slate-400">Profile Image</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-<body>
-  <div id="root">
+    <section id="about" class="py-24 bg-slate-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12">나의 여정</h2>
+        <div class="grid md:grid-cols-2 gap-12">
+          <div class="space-y-6">
+            <p class="text-slate-700 leading-relaxed text-lg">
+              과거 안드로이드 앱 UI 개발자로서 사용자 경험의 기초를 다졌습니다.
+              잠시 개발 현장을 떠나 있었지만, 배움에 대한 열정으로 다시 돌아와
+              <strong>Java, Spring, TypeScript</strong> 기반의 풀스택 개발자로
+              거듭나고 있습니다.
+            </p>
+            <p class="text-slate-700 leading-relaxed text-lg">
+              Obsidian에 공부 기록을 남기며, 배운 지식을 선별하여 블로그와
+              유튜브에 공유하는 과정을 즐깁니다. TDD와 클린 코드를 기반으로
+              탄탄한 소프트웨어를 만드는 것이 목표입니다.
+            </p>
+          </div>
+          <div
+            class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100"
+          >
+            <h3 class="font-bold mb-4 text-blue-600">Core Values</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start">
+                <span class="font-bold mr-3 text-slate-400">01</span>
+                <span
+                  ><strong>기록의 힘:</strong> 모든 학습 과정은 Obsidian에
+                  기록되어 자산이 됩니다.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span class="font-bold mr-3 text-slate-400">02</span>
+                <span
+                  ><strong>AI 가속:</strong> AI 도구를 활용하여 개발 생산성을
+                  극대화합니다.</span
+                >
+              </li>
+              <li class="flex items-start">
+                <span class="font-bold mr-3 text-slate-400">03</span>
+                <span
+                  ><strong>지속적 성장:</strong> TDD와 테스트를 중시하며
+                  안정적인 코드 기반 성장을 추구합니다.</span
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </div>
+    <section id="skills" class="py-24 bg-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-16">기술 스택</h2>
+        <div class="flex flex-wrap justify-center gap-4">
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >Java</span
+          >
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >Spring Boot</span
+          >
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >TypeScript</span
+          >
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >Nest.js</span
+          >
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >React.js</span
+          >
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >Next.js</span
+          >
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >TDD</span
+          >
+          <span class="px-6 py-2 bg-slate-100 rounded-full font-medium"
+            >Node.js</span
+          >
+        </div>
+      </div>
+    </section>
 
-  <script src="/app.c61986b1.js" type="module"></script>
+    <section id="projects" class="py-24 bg-slate-50">
+      <div class="container mx-auto px-6">
+        <h2 class="text-3xl font-bold mb-12">진행 중인 프로젝트</h2>
+        <div class="grid md:grid-cols-2 gap-8">
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100"
+          >
+            <div class="h-48 bg-slate-200"></div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-2 uppercase tracking-tight">
+                Personal Blog & Portfolio
+              </h3>
+              <p class="text-slate-600 mb-4">
+                학습 기록을 선별하여 업로드하는 개인 블로그 사이트 구축
+                프로젝트입니다. Next.js와 Nest.js를 활용합니다.
+              </p>
+              <div class="flex space-x-2">
+                <span class="text-xs font-bold text-blue-600">Next.js</span>
+                <span class="text-xs font-bold text-blue-600">Nest.js</span>
+              </div>
+            </div>
+          </div>
+          <div
+            class="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-xl transition border border-slate-100"
+          >
+            <div class="h-48 bg-slate-200"></div>
+            <div class="p-8">
+              <h3 class="text-xl font-bold mb-2 uppercase tracking-tight">
+                Knowledge Migration Tool
+              </h3>
+              <p class="text-slate-600 mb-4">
+                Evernote와 Notion의 데이터를 개인 홈 네트워크 서버로 옮기고
+                Obsidian으로 관리하기 위한 자동화 도구입니다.
+              </p>
+              <div class="flex space-x-2">
+                <span class="text-xs font-bold text-blue-600">Node.js</span>
+                <span class="text-xs font-bold text-blue-600">Python</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <section id="contact" class="py-24 bg-blue-600 text-white">
+      <div class="container mx-auto px-6 text-center">
+        <h2 class="text-3xl font-bold mb-8">함께 성장하고 싶습니다</h2>
+        <p class="text-blue-100 mb-12 max-w-lg mx-auto italic">
+          "성장은 혼자 하는 것이 아니라 기록하고 공유하며 완성된다고 믿습니다."
+        </p>
+        <div class="flex justify-center space-x-6">
+          <a
+            href="#"
+            class="bg-white text-blue-600 px-8 py-3 rounded-lg font-bold hover:bg-blue-50 transition"
+            >Email 보내기</a
+          >
+          <a
+            href="#"
+            class="bg-blue-700 text-white px-8 py-3 rounded-lg font-bold hover:bg-blue-800 transition"
+            >GitHub 방문</a
+          >
+        </div>
+      </div>
+    </section>
 
+    <footer class="py-12 bg-slate-900 text-slate-500">
+      <div class="container mx-auto px-6 text-center">
+        <p class="text-sm">© 2026 Your Name. Powered by AI & Vibe Coding.</p>
+      </div>
+    </footer>
+  </body>
 </html>
